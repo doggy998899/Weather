@@ -4,6 +4,7 @@ function weather_init() {
 	ossn_register_page('weather', 'weather_pages');
 	  if (ossn_isLoggedin()) {       
 		$icon = ossn_site_url('components/weather/image/weather.png');
+ossn_extend_view('css/ossn.default', 'css/weather');
     	ossn_register_sections_menu('newsfeed', array(
         	'text' => ossn_print('weather'),
         	'url' => ossn_site_url('weather'),
